@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'dm_sans', Helvetica, sans-serif;
+  font-style: normal;
+  src: local("dm_sans") url("../webroot/fonts/dm_sans_400.woff2") format(woff2), url("../fonts/dm_sans_400.woff2") format(woff);
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'dm_serif', Helvetica, sans-serif;
+  font-style: normal;
+  src: local("dm_serif") url("../fonts/dm_serif_display_400.woff2") format(woff2) url("../fonts/dm_serif_display_400.woff2") format(woff);
+  font-weight: normal; }
