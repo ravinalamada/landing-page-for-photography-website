@@ -1,0 +1,36 @@
+@import "./variable/colors";
+
+$bd-bg: $white;
+$header-bg: $purple;
+
+@mixin max-width-container {
+  max-width: 1114px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+@mixin link-dm-sans-font {
+  font-size: 18px;
+  line-height: 32px;
+  color: $black;
+}
+
+@mixin  link-dm-sans-white {
+  font-family: 'DM Sans-bolded';
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+}
+
+@mixin dm-serif-display {
+  font-family: 'dm_serif_display';
+  font-size: 18px;
+  line-height: 32px;
+  color: $black;
+}
+
+@mixin link-grey {
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 24px;
+}
