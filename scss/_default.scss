@@ -1,0 +1,31 @@
+@import "variables";
+
+body {
+  background-color: $bd-bg;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans';
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.items {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  @include max-width-container;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
