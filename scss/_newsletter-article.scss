@@ -1,0 +1,180 @@
+
+.newsletter-container {
+  text-align: left;
+}
+
+.newsletter-contents-wrapper,
+.photograph-wrapper,
+.navigation-history,
+.profile-container {
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+}
+
+.newsletter-contents-wrapper {
+  background-color: $yellow;
+}
+
+.latest-wrapper {
+  padding-block-start: 63px;
+}
+
+.newsletter-header-contents {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.latest-link {
+  @include link-grey;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-label {
+  @include link-dm-sans-white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  color: $black;
+}
+
+.email-input,
+.subscribe-form {
+  @include link-grey;
+  border-color: transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-inline-start: 16px;
+  padding-block-start: 13px;
+  padding-block-end: 11px;
+  margin-block-end: 16px;
+}
+
+.subscribe-form {
+  max-width: 50%;
+  background-color: $purple;
+  color:  $white;
+  padding-inline-start: 45.5px;
+  padding-inline-end: 45.5px;
+  margin-block-end: 53px;
+}
+
+.heading4 {
+  @include dm-serif-display;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 32px;
+  margin-block-start: 74px;
+}
+
+.navigation-history {
+  margin-block-start: 79.91px;
+  margin-block-end: 78px;
+}
+
+.items-history:not(:first-child) {
+  padding-block-start: 10px;
+}
+
+.profile-desc,
+.photograph-desc,
+.link-history {
+  @include link-grey;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 27px;
+  margin-inline-start: 100px;
+}
+
+.profile-desc-woman::before {
+  display: block;
+  content: '';
+  background-image: url(../images/woman_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 45px;
+  position: absolute;
+  left: 16px;
+}
+
+.profile-desc-arches::before {
+  content: '';
+  display: block;
+  background-image: url(../images/arches_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 45px;
+  position: absolute;
+  left: 16px;
+}
+
+.link-history:hover {
+  color:$black ;
+}
+
+@media (min-width:1100px) {
+  
+  .newsletter-container {
+    @include max-width-container;
+  }
+
+  .heading3-newsletter {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  
+  .newsletter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .photograph-wrapper,
+  .navigation-history,
+  .profile-container {
+    flex-basis: calc(100% / 3);
+  }
+
+  .navigation-history {
+    text-align: center;
+  }
+
+  .profile-desc-arches::before,
+  .profile-desc-woman::before {
+    left: calc(calc(calc(100% /3) * 2) - 40px);
+  }
+
+  .newsletter-header-contents {
+    flex-basis: 40%;
+    // display: flex;
+    // flex-direction: column-reverse;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 40%;
+    justify-content: space-between;
+  }
+
+  .subscribe-form {
+    margin-block-start: 16px;
+  }
+}
