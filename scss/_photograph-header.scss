@@ -1,14 +1,12 @@
 .photograph_header {
   background-color: $header-bg;
-  padding-inline-start: 16px;
-  padding-inline-end: 16px;
+  @include padding-inline;
 }
 
 .photograph_header--container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: var( --per-width);
+  @include display-row;
+  align-items: unset;
 }
 
 .photograph--icon--menu {
@@ -16,14 +14,14 @@
   background-image: url(../icons/icon_menu.svg);
   background-repeat: no-repeat;
   position: absolute;
-  top: 25px;
+  top: 19px;
   right: -77px;
 }
 
 .photograph__heading1 {
   @include dm-serif-display;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: calc(var(--based-value) + 8);
+  line-height:  calc(var(--based-value) * 2 );
   color: $white;
   text-transform: uppercase;
 }
@@ -36,19 +34,19 @@
 .photograph--checkbox--menu {
   position: absolute;
   top: 35px;
-  right: 17px;
+  right: calc(var(--based-value) + 1);
   z-index: -1;
 }
 
 .photograph__navigation--menu {
-  padding: 1rem;
+  padding: var(--based-value);
   background-color: #f8f8f8;
   position: absolute;
   z-index: 3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 250px;
+  top: var(--value);
+  left: var(--value);
+  bottom: var(--value);
+  width: calc(calc(var(--fix-width) * 2) + 50);
   height: max-content;
   box-shadow: 0 0 50px rgba(0,0,0,.5);
   transform: translateX(-100%);
@@ -66,42 +64,42 @@ body > input[type="checkbox"]:checked ~ main {
 .photograph_header__heading2 {
   display: none;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 1rem;
-  height: 1rem;
+  top: var(--based-value);
+  left: var(--based-value);
+  width: var(--based-value);
+  height: var(--based-value);
 }
 
 .photograph_header__link {
-  text-decoration: none;
+  text-decoration: var(--none-value);
   color: $purple;
-  opacity: 0.5;
+  opacity: calc(var(--opacity) / 2 );
   font-weight: 700;
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: var(--based-value);
   transition: opacity 0.3s;
   display: block;
-  padding: 1rem 1rem 1rem 4rem;
+  padding: var(--based-value) var(--based-value) var(--based-value) calc(var(--based-value) * 4);
 }
 
 body > [type="checkbox"]:checked ~ header label {
   position: absolute;
   z-index: 2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: var(--value);
+  right: var(--value);
+  bottom: var(--value);
+  left: var(--value);
+  height: var(--per-width);
+  width: var(--per-width);
   background: rgba(0,0,0,.25);
 }
 
 body > nav .active a {
-  opacity: 1;
+  opacity: var(--opacity);
 }
 
 body > nav > ul a:hover {
-  opacity: 1;
+  opacity: var(--opacity);
 }
 
 @media (min-width: 1100px) {
@@ -111,20 +109,20 @@ body > nav > ul a:hover {
 
   .photograph__navigation--menu {
     background-color: transparent;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    width: auto;
-    box-shadow: none;
-    transform: none;
-    transition: none;
+    top: var(--auto-value);
+    left: var(--auto-value);
+    right: var(--auto-value);
+    bottom: var(--auto-value);
+    width: var(--auto-value);
+    box-shadow: var(--none-value);
+    transform: var(--none-value);
+    transition: var(--none-value);
     display: contents;
   }
 
   .photograph_header__link {
     @include link-dm-sans-white;
-    opacity: 1;
+    opacity: var(--opacity);
   }
 
   .photograph_header__list {
@@ -133,7 +131,7 @@ body > nav > ul a:hover {
   }
 
   .photograph--icon--menu {
-    background-image: none;
+    background-image: var(--none-value);
   }
 
 }
