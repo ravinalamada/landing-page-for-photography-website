@@ -6,3 +6,13 @@ images.forEach(image => {
     image.classList.add('open');
   });
 });
+
+const closeModal = (e) => {
+  if(e.target === 'escape') {
+    console.log('cool');
+    images.classList.remove('open');
+  }
+}
+
+window.addEventListener('click', closeModal());
+
