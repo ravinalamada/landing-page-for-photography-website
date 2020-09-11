@@ -22,10 +22,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  @include max-width-container;
-}
-
 img {
   max-width: 100%;
   border-radius: 5px;
