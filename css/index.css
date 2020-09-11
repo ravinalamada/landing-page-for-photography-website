@@ -18,9 +18,9 @@
   font-weight: normal; }
 
 @font-face {
-  font-family: 'DM Sans-bolded', Helvetica, sans-serif;
+  font-family: 'DM Sans-bold', Helvetica, sans-serif;
   font-style: normal;
-  src: local("DM Sans") url("../fonts/dm_sans_700.woff2") format(woff2), url("../fonts/dm_sans_700.woff") format(woff);
+  src: local("DM Sans-bold") url("../fonts/dm_sans_700.woff2") format(woff2), url("../fonts/dm_sans_700.woff") format(woff);
   font-weight: bold; }
 
 @font-face {
@@ -211,7 +211,7 @@ img {
   line-height: calc(var(--based-value) + 8); }
 
 .photograf_features__span--desc {
-  font-family: 'DM Sans-bolded';
+  font-family: 'DM Sans-bold';
   font-size: var(--based-value);
   line-height: calc(var(--based-value) + 8);
   color: #FFFFFF;
@@ -369,7 +369,7 @@ body > nav > ul a:hover {
     transition: var(--none-value);
     display: contents; }
   .photograf_header__link {
-    font-family: 'DM Sans-bolded';
+    font-family: 'DM Sans-bold';
     font-size: var(--based-value);
     line-height: calc(var(--based-value) + 8);
     color: #FFFFFF;
@@ -414,9 +414,13 @@ body > input[type="checkbox"]:checked ~ main {
   padding-block-start: 10px; }
 
 .photograf__link--newsletter:hover {
+  font-family: 'DM Sans-bold';
+  font-size: var(--based-value);
+  line-height: calc(var(--based-value) + 8);
+  color: #FFFFFF;
   color: #000000; }
 
-.photograf__link--newsletter--home:focus {
+.photograf__link--newsletter--home:focus-visible {
   color: #000000; }
 
 @media (min-width: 1100px) {
@@ -456,7 +460,7 @@ body > input[type="checkbox"]:checked ~ main {
   flex-direction: column; }
 
 .photograf__label--email {
-  font-family: 'DM Sans-bolded';
+  font-family: 'DM Sans-bold';
   font-size: var(--based-value);
   line-height: calc(var(--based-value) + 8);
   color: #FFFFFF;
@@ -567,13 +571,6 @@ body > input[type="checkbox"]:checked ~ main {
     opacity: calc(var(--opacity) / 2); }
   .photograf__img__items {
     flex-basis: calc(calc(var(--per-width) / 8) - calc(9px)); } }
-
-img.open {
-  width: 81.5vw;
-  height: 50.8vw;
-  position: absolute;
-  top: 571px;
-  left: 116.5px; }
 
 .photograf__footer {
   border-block-start: 1px #000000 solid;
