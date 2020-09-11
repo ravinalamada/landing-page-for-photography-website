@@ -9,10 +9,11 @@
 }
 
 .photograf__link--newsletter:hover {
+  @include link-dm-sans-white;
   color:$black ;
 }
 
-.photograf__link--newsletter--home:focus {
+.photograf__link--newsletter--home:focus-visible {
   color:$black;
 }
 
