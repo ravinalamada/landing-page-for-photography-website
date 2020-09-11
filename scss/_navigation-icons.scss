@@ -1,0 +1,31 @@
+.photograph__list--icons {
+  display: flex;
+}
+
+.photograph_features__list--icons {
+  margin-block-start: 35px;
+}
+
+.photograph__items--icons {
+  width: calc(var(--fix-width) / 4 );
+}
+
+.photograph__link--icons {
+  display: block;
+  text-indent: -9999px;
+}
+
+.photograph__link--icons--facebook {
+  background-image: url(../icons/icon_facebook.svg);
+  background-repeat: no-repeat;
+}
+
+.photograph__link--icons--twitter {
+  background-image: url(../icons/icon_twitter.svg);
+  background-repeat: no-repeat;
+}
+
+.photograph__link--icons--instagram {
+  background-image: url(../icons/icon_instagram.svg);
+  background-repeat: no-repeat;
+}
