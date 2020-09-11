@@ -459,6 +459,10 @@ body > input[type="checkbox"]:checked ~ main {
   display: flex;
   flex-direction: column; }
 
+.photograf__form--contents {
+  border-color: transparent;
+  padding-inline-start: 0; }
+
 .photograf__label--email {
   font-family: 'DM Sans-bold';
   font-size: var(--based-value);
