@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+.photograf__form--contents {
+  border-color: transparent;
+  padding-inline-start: 0;
+}
+
 .photograf__label--email {
   @include link-dm-sans-white;
   text-transform: uppercase;
