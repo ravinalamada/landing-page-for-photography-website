@@ -4,7 +4,7 @@ function Gallery(gallery) {
     throw Error('No image found!!!');
   }
 
-  // Select the element we need
+  // Select the element I need
   const images = Array.from(gallery.querySelectorAll('img'));
   const wrapper = document.querySelector('.photograf__img--large--wrapper');
   let currentImage;
@@ -26,7 +26,7 @@ function Gallery(gallery) {
 
 }
 
-const gallery1 = Gallery(document.querySelector('.slider'));
+const gallery = Gallery(document.querySelector('.photograf__picture--container'));
 
 
 
