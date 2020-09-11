@@ -1,9 +1,13 @@
 :root {
-  --padding-inline: 16px;
-  --padding-block: 16px;
-  --margin-inline: 16px;
-  --margin-block: 16px;
+  --based-value: 16px;
+  --padding-inline: var(--based-value);
+  --padding-block: var(--based-value);
+  --margin-inline: var(--based-value);
+  --margin-block: var(--based-value);
   --opacity: 1;
   --per-width: 100%;
   --fix-width: 100px;
+  --auto-value: auto;
+  --value: 0;
+  --none-value: none;
 }
