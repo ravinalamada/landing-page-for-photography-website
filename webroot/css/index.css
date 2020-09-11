@@ -572,23 +572,23 @@ body > input[type="checkbox"]:checked ~ main {
   .photograf__img__items {
     flex-basis: calc(calc(var(--per-width) / 8) - calc(9px)); } }
 
-.photograf__footer {
+.photograf_footer {
   border-block-start: 1px #000000 solid;
   opacity: calc(var(--opacity) / 2);
   margin-block-start: 67px; }
 
-.photograf__footer--container {
+.photograf_footer--container {
   text-align: justify;
   padding-inline-start: var(--padding-inline);
   padding-inline-end: var(--padding-inline); }
 
-.photograf__footer--desc {
+.photograf_footer--desc {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
   line-height: calc(var(--based-value) + 8); }
 
 @media (min-width: 1100px) {
-  .photograf__footer--container {
+  .photograf_footer--container {
     max-width: 1114px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value);
