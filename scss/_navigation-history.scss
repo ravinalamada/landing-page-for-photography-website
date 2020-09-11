@@ -1,0 +1,27 @@
+
+.photograph__navigation--newsletter {
+  margin-block-start: 79.91px;
+  margin-block-end: calc(78px - 44px);
+}
+
+.photograph__items--newsletter:not(:first-child) {
+  padding-block-start: 10px;
+}
+
+.photograph__link--newsletter:hover {
+  color:$black ;
+}
+
+.photograph__link--newsletter--home:focus {
+  color:$black;
+}
+
+@media (min-width: 1100px) {
+  .photograph__navigation--newsletter {
+    text-align: center;
+    margin: var(--value);
+    padding: var(--value);
+    flex-basis: 44%;
+  }
+
+}
