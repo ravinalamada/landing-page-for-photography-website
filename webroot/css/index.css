@@ -348,7 +348,7 @@ body > [type="checkbox"]:checked ~ header label {
   left: var(--value);
   height: var(--per-width);
   width: var(--per-width);
-  background: rgba(0, 0, 0, 0.25); }
+  background: rgba(250, 0, 0, 0.25); }
 
 body > nav .active a {
   opacity: var(--opacity); }
