@@ -1,0 +1,46 @@
+.photograph__form,
+.photograph__form--contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.photograph__label--email {
+  @include link-dm-sans-white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: var(--based-value);
+  color: $black;
+}
+
+.photograph__email__input,
+.photograph__form--subscribe {
+  border-color: transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-inline-start: var(--based-value);
+  padding-block-start: 13px;
+  padding-block-end: 11px;
+  margin-block-end: var(--based-value);
+}
+
+.photograph__form--subscribe {
+  max-width: 50%;
+  background-color: $purple;
+  color: $white;
+  padding-inline-start: 45.5px;
+  padding-inline-end: 45.5px;
+  margin-block-end: 54px;
+}
+
+@media (min-width: 1100px) {
+  .photograph__form {
+    @include display-row;
+    align-items: unset;
+    flex-basis: 40%;
+  }
+
+  .photograph__form--subscribe {
+    margin-block-start: var(--margin-block);
+  }
+
+}
