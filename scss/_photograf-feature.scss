@@ -1,51 +1,51 @@
 
-.photograph_features--container {
+.photograf_features--container {
   text-align: justify;
   @include margin-inline;
 }
 
-.photograph_features__list {
+.photograf_features__list {
   @include display-row;
   flex-wrap: wrap;
   align-items: unset;
   margin-block-end: 75px;
 }
 
-.photograph_features--wrapper{
+.photograf_features--wrapper{
   margin-block-end: 78px;
 }
 
-.photograph_features--desc {
+.photograf_features--desc {
   @include link-grey;
 }
 
-.photograph_features__items {
+.photograf_features__items {
   display: flex;
   flex-direction: column;
   margin-block-start: 40px;
   flex-basis: calc(var(--per-width) / 2 );
 }
 
-.photograph_features__span--title {
+.photograf_features__span--title {
   @include link-grey;
 }
 
-.photograph_features__span--desc {
+.photograf_features__span--desc {
   @include link-dm-sans-white;
   color: $black;
   text-align: left;
 }
 
 @media (min-width: 1100px) {
-  .photograph_features--container {
+  .photograf_features--container {
     @include max-width-container;
     @include padding-inline;
     @include display-row;
     flex-wrap: wrap;
   }
 
-  .photograph_features__list,
-  .photograph_features--wrapper {
+  .photograf_features__list,
+  .photograf_features--wrapper {
     flex-basis: calc(var(--per-width) / 2 );
   }
 }

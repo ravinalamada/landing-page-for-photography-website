@@ -1,20 +1,20 @@
-.photograph__footer {
+.photograf__footer {
   border-block-start: 1px $black solid;
   opacity: calc(var(--opacity) / 2 );
   margin-block-start: 67px;
 }
 
-.photograph__footer--container {
+.photograf__footer--container {
   text-align: justify;
   @include padding-inline;
 }
 
-.photograph__footer--desc {
+.photograf__footer--desc {
   @include link-grey;
 }
 
 @media (min-width:1100px) {
-  .photograph__footer--container {
+  .photograf__footer--container {
     @include max-width-container;
     @include display-row;
     align-items: unset;

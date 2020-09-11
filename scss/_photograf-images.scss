@@ -1,0 +1,93 @@
+.photograf__picture--container {
+  padding-block-end: 30%;
+}
+
+.photograf__img--large {
+  display: block;
+  max-width: var(--per-width);
+  width: var(--per-width);
+  height: var(--per-width);
+  object-fit: cover;
+}
+
+.photograf__img__list {
+  position: relative;
+  display: block;
+  width: var(--per-width);
+}
+
+.photograf__img__items:nth-of-type(1),
+.photograf__img__items:nth-of-type(2),
+.photograf__img__items:nth-of-type(3) {
+  position: absolute;
+  width: 40%;
+  top: 9px;
+}
+
+.photograf__img__items:nth-of-type(2) {
+  left: calc(40% + 9px);
+}
+
+.photograf__img__items:nth-of-type(3) {
+  left: calc(calc(40% * 2) + calc(9px * 2));
+}
+
+.photograf__img__items:nth-of-type(2),
+.photograf__img__items:nth-of-type(3) {
+  opacity: calc(var(--opacity) / 2);
+}
+
+.photograf__img__items:nth-of-type(4),
+.photograf__img__items:nth-of-type(5),
+.photograf__img__items:nth-of-type(6),
+.photograf__img__items:nth-of-type(7),
+.photograf__img__items:nth-of-type(8) {
+  display: var(--none-value);
+}
+
+@media (min-width:1100px) {
+  .photograf__picture--container {
+    padding-block-end: var(--value);
+  }
+
+  .photograf__img__list {
+    width: var(--per-width);
+    @include display-row;
+    align-items: unset;
+    margin-block-start: 9px;
+    position: unset;
+  }
+  
+  .photograf__img__items:nth-of-type(1),
+  .photograf__img__items:nth-of-type(2),
+  .photograf__img__items:nth-of-type(3) {
+    position: unset;
+  }
+
+  .photograf__img__items:nth-of-type(3) {
+    transform: inherit;
+  }
+  
+  .photograf__img__items:nth-of-type(4),
+  .photograf__img__items:nth-of-type(5),
+  .photograf__img__items:nth-of-type(6),
+  .photograf__img__items:nth-of-type(7),
+  .photograf__img__items:nth-of-type(8) {
+    display: block;
+  }
+
+  .photograf__img__items:nth-of-type(2),
+  .photograf__img__items:nth-of-type(3),
+  .photograf__img__items:nth-of-type(4),
+  .photograf__img__items:nth-of-type(5),
+  .photograf__img__items:nth-of-type(6),
+  .photograf__img__items:nth-of-type(7),
+  .photograf__img__items:nth-of-type(8) {
+    opacity: calc(var(--opacity) / 2);
+  }
+    
+  .photograf__img__items {
+    flex-basis: calc(calc(var(--per-width) / 8) - calc(9px));
+  }
+  
+}

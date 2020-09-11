@@ -1,4 +1,4 @@
-.photograph--profile--desc--woman::before {
+.photograf--profile--desc--woman::before {
   display: block;
   content: '';
   background-image: url(../images/woman_sm.jpg);
@@ -11,7 +11,7 @@
   top: calc(var( --based-value) * 3 );
 }
 
-.photograph--profile--desc--arches::before {
+.photograf--profile--desc--arches::before {
   content: '';
   display: block;
   background-image: url(../images/arches_sm.jpg);

@@ -1,32 +1,32 @@
-.photograph_mastheader {
+.photograf_mastheader {
   @include margin-inline;
 }
 
-.photograph_mastheader--wrapper {
+.photograf_mastheader--wrapper {
   text-align: justify;
   margin-block-start: 31px;
   margin-block-end: 81px;
 }
 
-.photograph__heading2--mastheader {
+.photograf__heading2--mastheader {
   text-align: left;
 }
 
-.photograph_mastheader--sub-wrapper {
+.photograf_mastheader--sub-wrapper {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.photograph_mastheader__link {
+.photograf_mastheader__link {
   @include link-grey;
 }
 
 @media (min-width:1100px) {
-  .photograph--container {
+  .photograf--container {
     @include max-width-container;
   }
 
-  .photograph__heading2--mastheader {
+  .photograf__heading2--mastheader {
     max-width: calc(var(--per-width) / 2);
   }
 

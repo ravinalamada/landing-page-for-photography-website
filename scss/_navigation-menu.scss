@@ -1,4 +1,4 @@
-.photograph__navigation--menu {
+.photograf__navigation--menu {
   padding: var(--based-value);
   background-color: #f8f8f8;
   position: absolute;
@@ -13,23 +13,23 @@
   transition: transform 0.3s;
 }
 
-body > input[type="checkbox"]:checked ~ header .photograph__navigation--menu {
+body > input[type="checkbox"]:checked ~ header .photograf__navigation--menu {
   transform: translateX(0%);
 }
 
-.photograph_header__list {
+.photograf_header__list {
   display: flex;
   flex-direction: column;
 }
 
-.photograph--checkbox--menu {
+.photograf--checkbox--menu {
   position: absolute;
   top: 35px;
   right: calc(var(--based-value) + 1);
   z-index: -1;
 }
 
-.photograph_header__link {
+.photograf_header__link {
   text-decoration: var(--none-value);
   color: $purple;
   opacity: calc(var(--opacity) / 2 );
@@ -62,7 +62,7 @@ body > nav > ul a:hover {
 }
 
 @media (min-width: 1100px) {
-  .photograph__navigation--menu {
+  .photograf__navigation--menu {
     background-color: transparent;
     top: var(--auto-value);
     left: var(--auto-value);
@@ -75,12 +75,12 @@ body > nav > ul a:hover {
     display: contents;
   }
 
-  .photograph_header__link {
+  .photograf_header__link {
     @include link-dm-sans-white;
     opacity: var(--opacity);
   }
 
-  .photograph_header__list {
+  .photograf_header__list {
     display: flex;
     flex-direction: row;
   }

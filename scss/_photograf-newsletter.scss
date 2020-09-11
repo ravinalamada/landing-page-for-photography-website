@@ -1,0 +1,74 @@
+
+.photograf_newsletter--container,
+.photograf_newsletter--container--contents {
+  text-align: left;
+}
+
+.photograf_newsletter--contents--wrapper,
+.photograf_newsletter--wrapper,
+.photograf__navigation--newsletter,
+.photograf--profile--container {
+  @include padding-inline;
+}
+
+.photograf_newsletter--contents--wrapper {
+  background-color: $yellow;
+}
+
+.photograf_newsletter--header--contents {
+  padding-block-start: 62px;
+}
+
+.photograf__heading3--newsletter {
+  margin-block-start: 0;
+}
+
+.photograf_newsletter--desc,
+.photograf__email__input,
+.photograf__form--subscribe {
+  @include link-grey;
+}
+
+.photograf_newsletter--header--contents {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.photograf--profile--desc,
+.photograf__link--newsletter {
+  @include link-grey;
+}
+
+.photograf--profile {
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: 100px;
+}
+
+.photograf__link--latest {
+  @include link-grey;
+  color: $black;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1100px) {
+  .photograf_newsletter--container {
+    @include max-width-container;
+    @include display-row;
+  }
+
+  .photograf__heading3--newsletter {
+    margin-block-end: 104px;
+  }
+
+  .photograf_newsletter--wrapper,
+  .photograf--profile--container {
+    flex-basis: calc(26%);
+  }
+
+  .photograf_newsletter--header--contents {
+    flex-basis: 40%;
+    padding-block-start: 79px;
+  }
+
+}
