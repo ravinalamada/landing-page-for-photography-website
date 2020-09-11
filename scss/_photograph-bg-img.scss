@@ -1,0 +1,25 @@
+.photograph--profile--desc--woman::before {
+  display: block;
+  content: '';
+  background-image: url(../images/woman_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 45px;
+  position: relative;
+  left: -100.8px;
+  top: calc(var( --based-value) * 3 );
+}
+
+.photograph--profile--desc--arches::before {
+  content: '';
+  display: block;
+  background-image: url(../images/arches_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 45px;
+  position: relative;
+  left: -100.8px;
+  top: 44px;
+}
