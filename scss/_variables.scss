@@ -5,33 +5,54 @@ $bd-bg: $white;
 $header-bg: $purple;
 
 @mixin max-width-container {
-  max-width: calc(calc(var(--fix-width) * 10) + calc(var(--fix-width) + 14px));
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  max-width: 1114px;
+  margin-inline-start: var(--auto-value);
+  margin-inline-end: var(--auto-value);
 }
 
 @mixin link-dm-sans-font {
-  font-size: 18px;
-  line-height: 32px;
+  font-size: calc(var(--based-value) + 2 );
+  line-height: calc(var(--based-value) * 2 );
   color: $black;
 }
 
 @mixin  link-dm-sans-white {
   font-family: 'DM Sans-bolded';
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--based-value);
+  line-height: calc(var(--based-value) + 8);
   color: $white;
 }
 
 @mixin dm-serif-display {
   font-family: 'dm_serif_display';
-  font-size: 18px;
-  line-height: 32px;
+  font-size: calc(var(--based-value) + 2 );
+  line-height: calc(var(--based-value) * 2 );
   color: $black;
 }
 
 @mixin link-grey {
   color: $dark-grey;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--based-value);
+  line-height: calc(var(--based-value) + 8);
 }
+
+@mixin display-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@mixin margin-inline {
+  margin-inline-start: var(--margin-inline);
+  margin-inline-end: var(--margin-inline);
+}
+
+@mixin padding-inline {
+  padding-inline-start: var(--padding-inline);
+  padding-inline-end: var(--padding-inline);
+}
+
+
+
+
