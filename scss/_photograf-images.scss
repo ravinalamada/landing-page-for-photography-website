@@ -10,7 +10,7 @@
   object-fit: cover;
 }
 
-.photograf__img__list {
+.images-wrapper {
   position: relative;
   display: block;
   width: var(--per-width);
@@ -20,8 +20,8 @@
 .photograf__img__items:nth-of-type(2),
 .photograf__img__items:nth-of-type(3) {
   position: absolute;
-  width: 40%;
-  top: 9px;
+  // width: 40%;
+  // top: 9px;
 }
 
 .photograf__img__items:nth-of-type(2) {
@@ -68,13 +68,13 @@
     transform: inherit;
   }
   
-  .photograf__img__items:nth-of-type(4),
-  .photograf__img__items:nth-of-type(5),
-  .photograf__img__items:nth-of-type(6),
-  .photograf__img__items:nth-of-type(7),
-  .photograf__img__items:nth-of-type(8) {
-    display: block;
-  }
+  // .photograf__img__items:nth-of-type(4),
+  // .photograf__img__items:nth-of-type(5),
+  // .photograf__img__items:nth-of-type(6),
+  // .photograf__img__items:nth-of-type(7),
+  // .photograf__img__items:nth-of-type(8) {
+  //   display: block;
+  // }
 
   .photograf__img__items:nth-of-type(2),
   .photograf__img__items:nth-of-type(3),
