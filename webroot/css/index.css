@@ -576,7 +576,7 @@ body > input[type="checkbox"]:checked ~ main {
   position: unset;
   min-width: 800px; }
 
-picture {
+.images-anchor {
   flex-basis: calc(calc(100% / 8) - calc(9px)); }
 
 .photograf_footer {

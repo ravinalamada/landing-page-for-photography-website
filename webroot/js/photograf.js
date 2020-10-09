@@ -1,33 +1,17 @@
 
-function Gallery(gallery) {
-  if(!gallery) {
-    throw Error('No image found!!!');
-  }
+let largeImage = document.querySelector('#large-image');
 
-  // Select the element I need
-  const images = Array.from(gallery.querySelectorAll('img'));
-  const wrapper = document.querySelector('.photograf__img--large--wrapper');
-  let currentImage;
+ function handleClick (e) {
+  const anchor = e.target.closest('.images-anchor');
+  if (anchor) {
+    const url = anchor.href;
+    largeImage.src = url;
+    e.preventDefault();
+    console.log("man");
+   }
+ }
 
-  function showImage(el) {
-  if(!el) {
-    console.info("no image to show");
-    return;
-  }
-
-    // upadate this div with this info
-    wrapper.querySelector('img').src = el.src;
-    currentImage = el;
-  }
-
-  images.forEach(image => {
-    image.addEventListener('click', e => showImage(e.currentTarget));
-  });
-
-}
-
-const gallery = Gallery(document.querySelector('.photograf__picture--container'));
-
+document.addEventListener('click', handleClick)
 
 
 
