@@ -80,6 +80,10 @@ body > nav > ul a:hover {
     opacity: var(--opacity);
   }
 
+  .photograf_header__link:hover {
+    color: lightgrey;
+  }
+
   .photograf_header__list {
     display: flex;
     flex-direction: row;

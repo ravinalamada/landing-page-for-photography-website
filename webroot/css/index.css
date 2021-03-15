@@ -373,6 +373,8 @@ body > nav > ul a:hover {
     line-height: calc(var(--based-value) + 8);
     color: #FFFFFF;
     opacity: var(--opacity); }
+  .photograf_header__link:hover {
+    color: lightgrey; }
   .photograf_header__list {
     display: flex;
     flex-direction: row; } }
@@ -391,19 +393,29 @@ body > input[type="checkbox"]:checked ~ main {
 
 .photograf__link--icons {
   display: block;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  background-repeat: no-repeat; }
 
 .photograf__link--icons--facebook {
-  background-image: url(../icons/icon_facebook.svg);
-  background-repeat: no-repeat; }
+  background-image: url(../icons/icon_facebook.svg); }
+
+.photograf__link--icons--facebook:hover,
+.photograf__link--icons--facebook:focus {
+  background-image: url("../icons/circle-facebook.svg"); }
 
 .photograf__link--icons--twitter {
-  background-image: url(../icons/icon_twitter.svg);
-  background-repeat: no-repeat; }
+  background-image: url(../icons/icon_twitter.svg); }
+
+.photograf__link--icons--twitter:hover,
+.photograf__link--icons--twitter:focus {
+  background-image: url("../icons/twitter_circle.svg"); }
 
 .photograf__link--icons--instagram {
-  background-image: url(../icons/icon_instagram.svg);
-  background-repeat: no-repeat; }
+  background-image: url(../icons/icon_instagram.svg); }
+
+.photograf__link--icons--instagram:hover,
+.photograf__link--icons--instagram:focus {
+  background-image: url("../icons/circle-instagram.svg"); }
 
 .photograf__navigation--newsletter {
   margin-block-start: 79.91px;
