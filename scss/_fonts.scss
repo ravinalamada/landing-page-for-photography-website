@@ -1,26 +1,38 @@
-@font-face {
-  font-family:'DM Sans', Helvetica, sans-serif;
-  font-style: normal;
-  src: local('DM Sans')
-      url('../fonts/dm_sans_400.woff2') format(woff2),
-      url('../fonts/dm_sans_400.woff') format(woff);
-  font-weight: normal;
+$fonts : (
+  (
+    fontFamily: 'DM Sans',
+    fileName: 'dm_sans_400',
+    local: 'DM Sans',
+    style: noraml,
+    weight: 400,
+  ),
+  (
+    fontFamily: 'DM Sans-bold',
+    fileName: 'dm_sans_700',
+    local: 'DM Sans',
+    style: noraml,
+    weight: 700,
+  ),
+  (
+    fontFamily: 'dm_serif_display',
+    fileName: 'dm_serif_display_400',
+    local: 'dm_serif_display',
+    style: noraml,
+    weight: 400,
+  )
+
+);
+
+@each $font in $fonts {
+  @font-face {
+    font-family: map-get($font, 'fontFamily');
+    font-weight: map-get($font, 'weight');
+    font-style: map-get($font, 'style');
+    src: local(map-get($font, 'fontFamily')),
+      local(map-get($font, 'local')), 
+      url('../fonts/#{map-get($font, "fileName")}.woff2') format("woff2"),
+      url('../fonts/#{map-get($font, "fileName")}.woff') format("woff");
+  }
 }
 
-@font-face {
-  font-family:'DM Sans-bold', Helvetica, sans-serif;
-  font-style: normal;
-  src: local('DM Sans-bold')
-      url('../fonts/dm_sans_700.woff2') format(woff2),
-      url('../fonts/dm_sans_700.woff') format(woff);
-  font-weight: bold;
-}
 
-@font-face {
-  font-family: 'dm_serif_display', Helvetica, sans-serif;
-  font-style: normal;
-  src: local('dm_serif')
-       url('../fonts/dm_serif_display_400.woff2') format(woff2)
-       url('../fonts/dm_serif_display_400.woff') format(woff);
-  font-weight: normal;
-}

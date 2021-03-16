@@ -34,8 +34,7 @@
   flex-direction: column-reverse;
 }
 
-.photograf--profile--desc,
-.photograf__link--newsletter {
+.photograf--profile--desc {
   @include link-grey;
 }
 
@@ -55,6 +54,11 @@
   .photograf_newsletter--container {
     @include max-width-container;
     @include display-row;
+    align-items: center;
+  }
+
+  .photograf_newsletter--container--contents {
+    align-items: baseline;
   }
 
   .photograf__heading3--newsletter {
@@ -67,7 +71,7 @@
   }
 
   .photograf_newsletter--header--contents {
-    flex-basis: 40%;
+    flex-basis: 33%;
     padding-block-start: 79px;
   }
 

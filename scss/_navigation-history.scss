@@ -5,16 +5,20 @@
 }
 
 .photograf__items--newsletter:not(:first-child) {
-  padding-block-start: 10px;
+  margin-bottom: 12px;
 }
 
-.photograf__link--newsletter:hover {
-  @include link-dm-sans-white;
-  color:$black ;
+.photograf__link--newsletter {
+  @include link-grey;
 }
 
-.photograf__link--newsletter--home:focus-visible {
-  color:$black;
+.photograf__items--newsletter:nth-of-type(1) {
+  padding-bottom: 1.5rem;
+}
+
+.photograf__link--newsletter--home,
+.photograf__link--newsletter:not(first-child):hover {
+  @include link-dm-sans-font;
 }
 
 @media (min-width: 1100px) {

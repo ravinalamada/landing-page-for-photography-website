@@ -12,22 +12,22 @@
   --none-value: none; }
 
 @font-face {
-  font-family: 'DM Sans', Helvetica, sans-serif;
-  font-style: normal;
-  src: local("DM Sans") url("../fonts/dm_sans_400.woff2") format(woff2), url("../fonts/dm_sans_400.woff") format(woff);
-  font-weight: normal; }
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-style: noraml;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_400.woff2") format("woff2"), url("../fonts/dm_sans_400.woff") format("woff"); }
 
 @font-face {
-  font-family: 'DM Sans-bold', Helvetica, sans-serif;
-  font-style: normal;
-  src: local("DM Sans-bold") url("../fonts/dm_sans_700.woff2") format(woff2), url("../fonts/dm_sans_700.woff") format(woff);
-  font-weight: bold; }
+  font-family: "DM Sans-bold";
+  font-weight: 700;
+  font-style: noraml;
+  src: local("DM Sans-bold"), local("DM Sans"), url("../fonts/dm_sans_700.woff2") format("woff2"), url("../fonts/dm_sans_700.woff") format("woff"); }
 
 @font-face {
-  font-family: 'dm_serif_display', Helvetica, sans-serif;
-  font-style: normal;
-  src: local("dm_serif") url("../fonts/dm_serif_display_400.woff2") format(woff2) url("../fonts/dm_serif_display_400.woff") format(woff);
-  font-weight: normal; }
+  font-family: "dm_serif_display";
+  font-weight: 400;
+  font-style: noraml;
+  src: local("dm_serif_display"), local("dm_serif_display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/dm_serif_display_400.woff") format("woff"); }
 
 :root {
   --based-value: 16px;
@@ -41,6 +41,24 @@
   --auto-value: auto;
   --value: 0;
   --none-value: none; }
+
+@font-face {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-style: noraml;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_400.woff2") format("woff2"), url("../fonts/dm_sans_400.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Sans-bold";
+  font-weight: 700;
+  font-style: noraml;
+  src: local("DM Sans-bold"), local("DM Sans"), url("../fonts/dm_sans_700.woff2") format("woff2"), url("../fonts/dm_sans_700.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm_serif_display";
+  font-weight: 400;
+  font-style: noraml;
+  src: local("dm_serif_display"), local("dm_serif_display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/dm_serif_display_400.woff") format("woff"); }
 
 body {
   background-color: #FFFFFF;
@@ -87,7 +105,7 @@ img {
 
 @media (min-width: 1100px) {
   .photograf_header--container {
-    max-width: 1114px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value); }
   .photograf--icon--menu {
@@ -171,7 +189,7 @@ img {
 
 @media (min-width: 1100px) {
   .photograf--container {
-    max-width: 1114px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value); }
   .photograf__heading2--mastheader {
@@ -220,7 +238,7 @@ img {
 
 @media (min-width: 1100px) {
   .photograf_features--container {
-    max-width: 1114px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value);
     padding-inline-start: var(--padding-inline);
@@ -265,8 +283,7 @@ img {
   display: flex;
   flex-direction: column-reverse; }
 
-.photograf--profile--desc,
-.photograf__link--newsletter {
+.photograf--profile--desc {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
   line-height: calc(var(--based-value) + 8); }
@@ -285,12 +302,15 @@ img {
 
 @media (min-width: 1100px) {
   .photograf_newsletter--container {
-    max-width: 1114px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+    align-items: center; }
+  .photograf_newsletter--container--contents {
     align-items: baseline; }
   .photograf__heading3--newsletter {
     margin-block-end: 104px; }
@@ -298,7 +318,7 @@ img {
   .photograf--profile--container {
     flex-basis: calc(26%); }
   .photograf_newsletter--header--contents {
-    flex-basis: 40%;
+    flex-basis: 33%;
     padding-block-start: 79px; } }
 
 .photograf__navigation--menu {
@@ -411,16 +431,21 @@ body > input[type="checkbox"]:checked ~ main {
   margin-block-end: calc(78px - 44px); }
 
 .photograf__items--newsletter:not(:first-child) {
-  padding-block-start: 10px; }
+  margin-bottom: 12px; }
 
-.photograf__link--newsletter:hover {
-  font-family: 'DM Sans-bold';
+.photograf__link--newsletter {
+  color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8);
-  color: #FFFFFF;
-  color: #000000; }
+  line-height: calc(var(--based-value) + 8); }
 
-.photograf__link--newsletter--home:focus-visible {
+.photograf__items--newsletter:nth-of-type(1) {
+  padding-bottom: 1.5rem; }
+
+.photograf__link--newsletter--home,
+.photograf__link--newsletter:not(first-child):hover {
+  font-family: 'DM Sans-bold';
+  font-size: calc(var(--based-value) + 2);
+  line-height: calc(var(--based-value) * 2);
   color: #000000; }
 
 @media (min-width: 1100px) {
@@ -489,7 +514,11 @@ body > input[type="checkbox"]:checked ~ main {
   color: #FFFFFF;
   padding-inline-start: 45.5px;
   padding-inline-end: 45.5px;
-  margin-block-end: 54px; }
+  margin-block-end: 54px;
+  opacity: 0.8; }
+
+.photograf__form--subscribe:hover {
+  opacity: 1; }
 
 @media (min-width: 1100px) {
   .photograf__form {
@@ -498,9 +527,18 @@ body > input[type="checkbox"]:checked ~ main {
     justify-content: space-between;
     align-items: baseline;
     align-items: unset;
-    flex-basis: 40%; }
+    flex-basis: 40%;
+    margin-block-start: 2.5rem; }
+  .photograf__form--contents {
+    padding: 0;
+    margin-inline-end: 54px; }
+  .photograf__email__input {
+    padding-inline-end: 172px; }
+  .photograf__label--email {
+    margin-block-end: 12px; }
   .photograf__form--subscribe {
-    margin-block-start: var(--margin-block); } }
+    margin-block-start: var(--margin-block);
+    margin-top: 1.8rem; } }
 
 .photograf__picture--container {
   padding-block-end: 30%; }
@@ -593,7 +631,7 @@ body > input[type="checkbox"]:checked ~ main {
 
 @media (min-width: 1100px) {
   .photograf_footer--container {
-    max-width: 1114px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value);
     display: flex;
