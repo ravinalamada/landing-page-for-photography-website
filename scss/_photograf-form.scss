@@ -35,6 +35,11 @@
   padding-inline-start: 45.5px;
   padding-inline-end: 45.5px;
   margin-block-end: 54px;
+  opacity: 0.8;
+}
+
+.photograf__form--subscribe:hover {
+  opacity: 1;
 }
 
 @media (min-width: 1100px) {
@@ -42,10 +47,25 @@
     @include display-row;
     align-items: unset;
     flex-basis: 40%;
+    margin-block-start: 2.5rem;
+  }
+
+  .photograf__form--contents {
+    padding: 0;
+    margin-inline-end: 54px;
+  }
+
+  .photograf__email__input {
+    padding-inline-end: 172px;
+  }
+
+  .photograf__label--email {
+    margin-block-end: 12px;
   }
 
   .photograf__form--subscribe {
     margin-block-start: var(--margin-block);
+    margin-top: 1.8rem;
   }
 
 }
