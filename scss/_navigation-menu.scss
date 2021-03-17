@@ -31,6 +31,7 @@ body > input[type="checkbox"]:checked ~ header .photograf__navigation--menu {
 
 .photograf_header__link {
   text-decoration: var(--none-value);
+  text-transform: capitalize;
   color: $purple;
   opacity: calc(var(--opacity) / 2 );
   font-weight: 700;
