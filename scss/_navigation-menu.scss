@@ -9,8 +9,11 @@
   width: calc(calc(var(--fix-width) * 2) + 50);
   height: max-content;
   box-shadow: 0 0 50px rgba(0,0,0,.5);
-  transform: translateX(-100%);
+  transform: translateX(-113%);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 body > input[type="checkbox"]:checked ~ header .photograf__navigation--menu {
@@ -20,6 +23,8 @@ body > input[type="checkbox"]:checked ~ header .photograf__navigation--menu {
 .photograf_header__list {
   display: flex;
   flex-direction: column;
+  text-align: justify;
+  padding-inline-start: 40%;
 }
 
 .photograf--checkbox--menu {
@@ -39,7 +44,8 @@ body > input[type="checkbox"]:checked ~ header .photograf__navigation--menu {
   line-height: var(--based-value);
   transition: opacity 0.3s;
   display: block;
-  padding: var(--based-value) var(--based-value) var(--based-value) calc(var(--based-value) * 4);
+  padding-block-end: 50px;
+  font-size: 20px;
 }
 
 body > [type="checkbox"]:checked ~ header label {

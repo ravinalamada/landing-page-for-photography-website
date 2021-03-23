@@ -3,11 +3,21 @@
 }
 
 .photograf__img--large {
-  display: block;
-  max-width: var(--per-width);
-  width: var(--per-width);
-  height: var(--per-width);
-  object-fit: cover;
+  width: 100%;
+ }
+
+.images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-block-start: 9px;
+  position: unset;
+  min-width: 800px;
+}
+
+.images-anchor {
+  flex-basis: calc(calc(100% / 8) - calc(9px));
 }
 
 .images-wrapper {
@@ -20,8 +30,6 @@
 .photograf__img__items:nth-of-type(2),
 .photograf__img__items:nth-of-type(3) {
   position: absolute;
-  // width: 40%;
-  // top: 9px;
 }
 
 .photograf__img__items:nth-of-type(2) {

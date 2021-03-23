@@ -338,15 +338,20 @@ img {
   width: calc(calc(var(--fix-width) * 2) + 50);
   height: max-content;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  transform: translateX(-100%);
-  transition: transform 0.3s; }
+  transform: translateX(-113%);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 body > input[type="checkbox"]:checked ~ header .photograf__navigation--menu {
   transform: translateX(0%); }
 
 .photograf_header__list {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: justify;
+  padding-inline-start: 40%; }
 
 .photograf--checkbox--menu {
   position: absolute;
@@ -364,7 +369,8 @@ body > input[type="checkbox"]:checked ~ header .photograf__navigation--menu {
   line-height: var(--based-value);
   transition: opacity 0.3s;
   display: block;
-  padding: var(--based-value) var(--based-value) var(--based-value) calc(var(--based-value) * 4); }
+  padding-block-end: 50px;
+  font-size: 20px; }
 
 body > [type="checkbox"]:checked ~ header label {
   position: absolute;
@@ -563,11 +569,19 @@ body > input[type="checkbox"]:checked ~ main {
   padding-block-end: 30%; }
 
 .photograf__img--large {
-  display: block;
-  max-width: var(--per-width);
-  width: var(--per-width);
-  height: var(--per-width);
-  object-fit: cover; }
+  width: 100%; }
+
+.images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-block-start: 9px;
+  position: unset;
+  min-width: 800px; }
+
+.images-anchor {
+  flex-basis: calc(calc(100% / 8) - calc(9px)); }
 
 .images-wrapper {
   position: relative;
@@ -624,18 +638,6 @@ body > input[type="checkbox"]:checked ~ main {
     opacity: calc(var(--opacity) / 2); }
   .photograf__img__items {
     flex-basis: calc(calc(var(--per-width) / 8) - calc(9px)); } }
-
-.images {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-block-start: 9px;
-  position: unset;
-  min-width: 800px; }
-
-.images-anchor {
-  flex-basis: calc(calc(100% / 8) - calc(9px)); }
 
 .photograf_footer {
   border-block-start: 1px #000000 solid;
