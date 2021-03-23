@@ -1,17 +1,23 @@
 
 let largeImage = document.querySelector('#large-image');
+const activeImage = document.querySelector('.active')
+const allImages = document.querySelectorAll('.images-anchor');
+allImages.forEach(image => image.style.opacity = 0.5);
+activeImage.style.opacity = 1;
 
  function handleClick (e) {
-  const anchor = e.target.closest('.images-anchor');
+  const parentEl = e.currentTarget;
+  const anchor = e.target;
   if (anchor) {
-    const url = anchor.href;
+    const url = anchor.src;
     largeImage.src = url;
-    e.preventDefault();
-    console.log("man");
+    activeImage.style.opacity = '0.5'
+    allImages.forEach(image => image.style.opacity = 0.5)
+    parentEl.style.opacity = 1;
    }
  }
 
-document.addEventListener('click', handleClick)
+allImages.forEach(image => image.addEventListener('click', handleClick))
 
 
 
