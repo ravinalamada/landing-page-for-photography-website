@@ -163,7 +163,8 @@ img {
     line-height: 80px; }
   .photograf__heading3 {
     font-size: 52px;
-    line-height: 64px; } }
+    line-height: 64px;
+    margin-block-start: -09px; } }
 
 .photograf_mastheader {
   margin-inline-start: var(--margin-inline);
@@ -225,7 +226,8 @@ img {
 .photograf_features__span--title {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8); }
+  line-height: calc(var(--based-value) + 8);
+  padding-bottom: 9px; }
 
 .photograf_features__span--desc {
   font-family: 'DM Sans-bold';
@@ -246,10 +248,15 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    flex-wrap: wrap; }
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-block-start: 89px; }
   .photograf_features__list,
   .photograf_features--wrapper {
-    flex-basis: calc(var(--per-width) / 2); } }
+    flex-basis: calc(var(--per-width) / 2); }
+  .photograf_features__items:nth-of-type(1),
+  .photograf_features__items:nth-of-type(2) {
+    margin-block-start: 0; } }
 
 .photograf_newsletter--container,
 .photograf_newsletter--container--contents {

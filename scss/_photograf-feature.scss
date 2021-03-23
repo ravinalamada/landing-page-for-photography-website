@@ -28,6 +28,7 @@
 
 .photograf_features__span--title {
   @include link-grey;
+  padding-bottom: 9px;
 }
 
 .photograf_features__span--desc {
@@ -41,11 +42,18 @@
     @include max-width-container;
     @include padding-inline;
     @include display-row;
+    align-items: flex-start;
     flex-wrap: wrap;
+    padding-block-start: 89px;
   }
 
   .photograf_features__list,
   .photograf_features--wrapper {
     flex-basis: calc(var(--per-width) / 2 );
+  }
+
+  .photograf_features__items:nth-of-type(1),
+  .photograf_features__items:nth-of-type(2) {
+    margin-block-start: 0;
   }
 }
