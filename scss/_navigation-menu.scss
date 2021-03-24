@@ -6,10 +6,10 @@
   top: var(--value);
   left: var(--value);
   bottom: var(--value);
-  width: calc(calc(var(--fix-width) * 2) + 50);
-  height: max-content;
+  width: 50%;
+  height: 100%;
   box-shadow: 0 0 50px rgba(0,0,0,.5);
-  transform: translateX(-113%);
+  transform: translateX(-126%);
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@ body > nav > ul a:hover {
   opacity: var(--opacity);
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf__navigation--menu {
     background-color: transparent;
     top: var(--auto-value);
@@ -82,6 +82,14 @@ body > nav > ul a:hover {
     display: contents;
   }
 
+  .photograf_header__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    flex-basis: 324px;
+  }
+
   .photograf_header__link {
     @include link-dm-sans-white;
     opacity: var(--opacity);
@@ -89,11 +97,6 @@ body > nav > ul a:hover {
 
   .photograf_header__link:hover {
     color: lightgrey;
-  }
-
-  .photograf_header__list {
-    display: flex;
-    flex-direction: row;
   }
 
 }

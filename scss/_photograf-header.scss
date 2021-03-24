@@ -18,9 +18,10 @@
   right: -77px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf_header--container {
     @include max-width-container; 
+    align-items: baseline;
   }
 
   .photograf--icon--menu {

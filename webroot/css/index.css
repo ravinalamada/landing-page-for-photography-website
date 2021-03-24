@@ -102,11 +102,12 @@ img {
   top: 19px;
   right: -77px; }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf_header--container {
-    max-width: 1440px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
-    margin-inline-end: var(--auto-value); }
+    margin-inline-end: var(--auto-value);
+    align-items: baseline; }
   .photograf--icon--menu {
     background-image: var(--none-value); } }
 
@@ -154,7 +155,7 @@ img {
   line-height: calc(var(--based-value) * 2);
   margin-block-start: 74px; }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf__heading1 {
     font-size: 40px;
     line-height: 48px; }
@@ -187,9 +188,9 @@ img {
   font-size: var(--based-value);
   line-height: calc(var(--based-value) + 8); }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf--container {
-    max-width: 1440px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value); }
   .photograf__heading2--mastheader {
@@ -237,9 +238,9 @@ img {
   color: #000000;
   text-align: left; }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf_features--container {
-    max-width: 1440px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value);
     padding-inline-start: var(--padding-inline);
@@ -306,9 +307,9 @@ img {
   color: #000000;
   text-transform: uppercase; }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf_newsletter--container {
-    max-width: 1440px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value);
     display: flex;
@@ -335,10 +336,10 @@ img {
   top: var(--value);
   left: var(--value);
   bottom: var(--value);
-  width: calc(calc(var(--fix-width) * 2) + 50);
-  height: max-content;
+  width: 50%;
+  height: 100%;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  transform: translateX(-113%);
+  transform: translateX(-126%);
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
@@ -389,7 +390,7 @@ body > nav .active a {
 body > nav > ul a:hover {
   opacity: var(--opacity); }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf__navigation--menu {
     background-color: transparent;
     top: var(--auto-value);
@@ -401,6 +402,12 @@ body > nav > ul a:hover {
     transform: var(--none-value);
     transition: var(--none-value);
     display: contents; }
+  .photograf_header__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    flex-basis: 324px; }
   .photograf_header__link {
     font-family: 'DM Sans-bold';
     font-size: var(--based-value);
@@ -408,10 +415,7 @@ body > nav > ul a:hover {
     color: #FFFFFF;
     opacity: var(--opacity); }
   .photograf_header__link:hover {
-    color: lightgrey; }
-  .photograf_header__list {
-    display: flex;
-    flex-direction: row; } }
+    color: lightgrey; } }
 
 body > input[type="checkbox"]:checked ~ main {
   z-index: 1; }
@@ -473,7 +477,7 @@ body > input[type="checkbox"]:checked ~ main {
   line-height: calc(var(--based-value) * 2);
   color: #000000; }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf__navigation--newsletter {
     text-align: center;
     margin: var(--value);
@@ -545,7 +549,7 @@ body > input[type="checkbox"]:checked ~ main {
 .photograf__form--subscribe:hover {
   opacity: 1; }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf__form {
     display: flex;
     flex-direction: row;
@@ -610,7 +614,7 @@ body > input[type="checkbox"]:checked ~ main {
 .photograf__img__items:nth-of-type(8) {
   display: var(--none-value); }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf__picture--container {
     padding-block-end: var(--value); }
   .photograf__img__list {
@@ -654,9 +658,9 @@ body > input[type="checkbox"]:checked ~ main {
   font-size: var(--based-value);
   line-height: calc(var(--based-value) + 8); }
 
-@media (min-width: 1100px) {
+@media (min-width: 1440px) {
   .photograf_footer--container {
-    max-width: 1440px;
+    max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value);
     display: flex;

@@ -5,7 +5,7 @@ $bd-bg: $white;
 $header-bg: $purple;
 
 @mixin max-width-container {
-  max-width: 1440px;
+  max-width: 1170px;
   margin-inline-start: var(--auto-value);
   margin-inline-end: var(--auto-value);
 }
