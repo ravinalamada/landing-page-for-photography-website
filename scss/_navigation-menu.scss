@@ -68,7 +68,7 @@ body > nav > ul a:hover {
   opacity: var(--opacity);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .photograf__navigation--menu {
     background-color: transparent;
     top: var(--auto-value);

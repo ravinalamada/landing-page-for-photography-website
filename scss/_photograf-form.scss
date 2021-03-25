@@ -42,7 +42,7 @@
   opacity: 1;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .photograf__form {
     @include display-row;
     align-items: unset;

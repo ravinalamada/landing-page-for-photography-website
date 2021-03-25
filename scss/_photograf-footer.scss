@@ -13,7 +13,7 @@
   @include link-grey;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .photograf_footer--container {
     @include max-width-container;
     @include display-row;

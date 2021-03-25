@@ -37,7 +37,7 @@
   text-align: left;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .photograf_features--container {
     @include max-width-container;
     @include padding-inline;

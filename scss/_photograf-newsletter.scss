@@ -50,7 +50,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .photograf_newsletter--container {
     @include max-width-container;
     @include display-row;

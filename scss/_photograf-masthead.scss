@@ -21,7 +21,7 @@
   @include link-grey;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .photograf--container {
     @include max-width-container;
   }
