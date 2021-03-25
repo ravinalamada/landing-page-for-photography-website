@@ -48,6 +48,10 @@ body > input[type="checkbox"]:checked ~ header .photograf__navigation--menu {
   font-size: 20px;
 }
 
+.photograf_header__link:hover {
+  opacity: 1;
+}
+
 body > [type="checkbox"]:checked ~ header label {
   position: absolute;
   z-index: 2;
