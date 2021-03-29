@@ -26,6 +26,8 @@ $header-bg: $purple;
 
 @mixin dm-serif-display {
   font-family: 'dm_serif_display';
+  font-style: normal;
+  font-weight: normal;
   font-size: calc(var(--based-value) + 2 );
   line-height: calc(var(--based-value) * 2 );
   color: $black;
@@ -34,7 +36,7 @@ $header-bg: $purple;
 @mixin link-grey {
   color: $dark-grey;
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8);
+  line-height: 24px;
 }
 
 @mixin display-row {

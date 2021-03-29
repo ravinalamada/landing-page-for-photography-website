@@ -4,6 +4,7 @@
   line-height:  calc(var(--based-value) * 2 );
   color: $white;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .photograf_header__heading2 {
@@ -21,11 +22,20 @@
   line-height: 60px
 }
 
+.photograf__heading2--mastheader {
+  margin-top: 38px;
+  margin-bottom: 61px
+}
+
+.photograf__heading3--newsletter {
+  margin-bottom: 19px;
+}
+
 .photograf__heading3 {
   @include dm-serif-display;
-  font-size: 34px;
-  line-height: 40px;
-}
+  font-size: 40px;
+  line-height: 48px;
+}  
 
 .photograf__heading4 {
   @include dm-serif-display;
@@ -50,6 +60,10 @@
     font-size: 52px;
     line-height: 64px;
     margin-block-start: -09px;
+  }
+
+  .photograf__heading3--newsletter {
+    margin-bottom: 17px;
   }
 
 }

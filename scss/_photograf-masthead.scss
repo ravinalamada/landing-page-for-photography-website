@@ -1,11 +1,11 @@
 .photograf_mastheader {
   @include margin-inline;
+  margin-block-start: 49px;
 }
 
 .photograf_mastheader--wrapper {
   text-align: justify;
-  margin-block-start: 31px;
-  margin-block-end: 81px;
+  margin-block-end: 82px;
 }
 
 .photograf__heading2--mastheader {
@@ -21,9 +21,18 @@
   @include link-grey;
 }
 
+.photograf_mastheader--desc {
+    font-size: 18px;
+    line-height: 32px;
+}
+
 @media (min-width: 1000px) {
   .photograf--container {
     @include max-width-container;
+  }
+
+  .photograf_mastheader--wrapper {
+    margin-bottom: 69px;
   }
 
   .photograf__heading2--mastheader {

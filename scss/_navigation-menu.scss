@@ -97,6 +97,7 @@ body > nav > ul a:hover {
   .photograf_header__link {
     @include link-dm-sans-white;
     opacity: var(--opacity);
+    padding-block-end: 0;
   }
 
   .photograf_header__link:hover {

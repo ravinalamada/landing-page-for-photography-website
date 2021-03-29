@@ -61,17 +61,24 @@
     align-items: baseline;
   }
 
+  .photograf_newsletter--contents--wrapper {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+
   .photograf__heading3--newsletter {
     margin-block-end: 104px;
   }
 
-  .photograf_newsletter--wrapper,
+  .photograf_newsletter--wrapper {
+    flex-basis: 270px;
+  }
   .photograf--profile--container {
-    flex-basis: calc(26%);
+    flex-basis: 370px;
   }
 
   .photograf_newsletter--header--contents {
-    flex-basis: 33%;
+    flex-basis: 382px;
     padding-block-start: 79px;
   }
 

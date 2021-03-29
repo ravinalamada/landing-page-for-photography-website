@@ -2,6 +2,7 @@
 .photograf_features--container {
   text-align: justify;
   @include margin-inline;
+  padding-top: 92px;
 }
 
 .photograf_features__list {
@@ -11,12 +12,13 @@
   margin-block-end: 75px;
 }
 
-.photograf_features--wrapper{
-  margin-block-end: 78px;
-}
-
 .photograf_features--desc {
   @include link-grey;
+}
+
+.photograf_features--summary {
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .photograf_features__items {
@@ -40,11 +42,14 @@
 @media (min-width: 1000px) {
   .photograf_features--container {
     @include max-width-container;
-    @include padding-inline;
     @include display-row;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-block-start: 89px;
+    padding-block-start: 87px;
+  }
+
+  .photograf_features--summary {
+    margin-bottom: 38px;
   }
 
   .photograf_features__list,

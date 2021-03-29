@@ -1,4 +1,6 @@
 .photograf_header {
+  padding-block-start: 16px;
+  padding-block-end: 16px;
   background-color: $header-bg;
   @include padding-inline;
 }
@@ -21,7 +23,6 @@
 @media (min-width: 1000px) {
   .photograf_header--container {
     @include max-width-container; 
-    align-items: baseline;
   }
 
   .photograf--icon--menu {

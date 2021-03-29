@@ -63,9 +63,11 @@
 body {
   background-color: #FFFFFF;
   text-align: center;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  line-height: 24px;
   margin: 0;
-  padding: 0;
-  font-family: 'DM Sans'; }
+  padding: 0; }
 
 ul {
   padding: 0;
@@ -81,7 +83,12 @@ img {
   max-width: 100%;
   border-radius: 5px; }
 
+p {
+  margin: 0; }
+
 .photograf_header {
+  padding-block-start: 16px;
+  padding-block-end: 16px;
   background-color: #434CCC;
   padding-inline-start: var(--padding-inline);
   padding-inline-end: var(--padding-inline); }
@@ -106,20 +113,22 @@ img {
   .photograf_header--container {
     max-width: 1170px;
     margin-inline-start: var(--auto-value);
-    margin-inline-end: var(--auto-value);
-    align-items: baseline; }
+    margin-inline-end: var(--auto-value); }
   .photograf--icon--menu {
     background-image: var(--none-value); } }
 
 .photograf__heading1 {
   font-family: 'dm_serif_display';
+  font-style: normal;
+  font-weight: normal;
   font-size: calc(var(--based-value) + 2);
   line-height: calc(var(--based-value) * 2);
   color: #000000;
   font-size: calc(var(--based-value) + 8);
   line-height: calc(var(--based-value) * 2);
   color: #FFFFFF;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
 
 .photograf_header__heading2 {
   display: none;
@@ -131,22 +140,35 @@ img {
 
 .photograf__heading2 {
   font-family: 'dm_serif_display';
+  font-style: normal;
+  font-weight: normal;
   font-size: calc(var(--based-value) + 2);
   line-height: calc(var(--based-value) * 2);
   color: #000000;
   font-size: 47px;
   line-height: 60px; }
 
+.photograf__heading2--mastheader {
+  margin-top: 38px;
+  margin-bottom: 61px; }
+
+.photograf__heading3--newsletter {
+  margin-bottom: 19px; }
+
 .photograf__heading3 {
   font-family: 'dm_serif_display';
+  font-style: normal;
+  font-weight: normal;
   font-size: calc(var(--based-value) + 2);
   line-height: calc(var(--based-value) * 2);
   color: #000000;
-  font-size: 34px;
-  line-height: 40px; }
+  font-size: 40px;
+  line-height: 48px; }
 
 .photograf__heading4 {
   font-family: 'dm_serif_display';
+  font-style: normal;
+  font-weight: normal;
   font-size: calc(var(--based-value) + 2);
   line-height: calc(var(--based-value) * 2);
   color: #000000;
@@ -165,16 +187,18 @@ img {
   .photograf__heading3 {
     font-size: 52px;
     line-height: 64px;
-    margin-block-start: -09px; } }
+    margin-block-start: -09px; }
+  .photograf__heading3--newsletter {
+    margin-bottom: 17px; } }
 
 .photograf_mastheader {
   margin-inline-start: var(--margin-inline);
-  margin-inline-end: var(--margin-inline); }
+  margin-inline-end: var(--margin-inline);
+  margin-block-start: 49px; }
 
 .photograf_mastheader--wrapper {
   text-align: justify;
-  margin-block-start: 31px;
-  margin-block-end: 81px; }
+  margin-block-end: 82px; }
 
 .photograf__heading2--mastheader {
   text-align: left; }
@@ -186,20 +210,27 @@ img {
 .photograf_mastheader__link {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8); }
+  line-height: 24px; }
+
+.photograf_mastheader--desc {
+  font-size: 18px;
+  line-height: 32px; }
 
 @media (min-width: 1000px) {
   .photograf--container {
     max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value); }
+  .photograf_mastheader--wrapper {
+    margin-bottom: 69px; }
   .photograf__heading2--mastheader {
     max-width: calc(var(--per-width) / 2); } }
 
 .photograf_features--container {
   text-align: justify;
   margin-inline-start: var(--margin-inline);
-  margin-inline-end: var(--margin-inline); }
+  margin-inline-end: var(--margin-inline);
+  padding-top: 92px; }
 
 .photograf_features__list {
   display: flex;
@@ -210,13 +241,14 @@ img {
   align-items: unset;
   margin-block-end: 75px; }
 
-.photograf_features--wrapper {
-  margin-block-end: 78px; }
-
 .photograf_features--desc {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8); }
+  line-height: 24px; }
+
+.photograf_features--summary {
+  font-size: 18px;
+  line-height: 32px; }
 
 .photograf_features__items {
   display: flex;
@@ -227,7 +259,7 @@ img {
 .photograf_features__span--title {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8);
+  line-height: 24px;
   padding-bottom: 9px; }
 
 .photograf_features__span--desc {
@@ -243,15 +275,15 @@ img {
     max-width: 1170px;
     margin-inline-start: var(--auto-value);
     margin-inline-end: var(--auto-value);
-    padding-inline-start: var(--padding-inline);
-    padding-inline-end: var(--padding-inline);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-block-start: 89px; }
+    padding-block-start: 87px; }
+  .photograf_features--summary {
+    margin-bottom: 38px; }
   .photograf_features__list,
   .photograf_features--wrapper {
     flex-basis: calc(var(--per-width) / 2); }
@@ -284,7 +316,7 @@ img {
 .photograf__form--subscribe {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8); }
+  line-height: 24px; }
 
 .photograf_newsletter--header--contents {
   display: flex;
@@ -293,7 +325,7 @@ img {
 .photograf--profile--desc {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8); }
+  line-height: 24px; }
 
 .photograf--profile {
   display: flex;
@@ -303,7 +335,7 @@ img {
 .photograf__link--latest {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8);
+  line-height: 24px;
   color: #000000;
   text-transform: uppercase; }
 
@@ -319,13 +351,17 @@ img {
     align-items: center; }
   .photograf_newsletter--container--contents {
     align-items: baseline; }
+  .photograf_newsletter--contents--wrapper {
+    padding-inline-start: 0;
+    padding-inline-end: 0; }
   .photograf__heading3--newsletter {
     margin-block-end: 104px; }
-  .photograf_newsletter--wrapper,
+  .photograf_newsletter--wrapper {
+    flex-basis: 270px; }
   .photograf--profile--container {
-    flex-basis: calc(26%); }
+    flex-basis: 370px; }
   .photograf_newsletter--header--contents {
-    flex-basis: 33%;
+    flex-basis: 382px;
     padding-block-start: 79px; } }
 
 .photograf__navigation--menu {
@@ -416,7 +452,8 @@ body > nav > ul a:hover {
     font-size: var(--based-value);
     line-height: calc(var(--based-value) + 8);
     color: #FFFFFF;
-    opacity: var(--opacity); }
+    opacity: var(--opacity);
+    padding-block-end: 0; }
   .photograf_header__link:hover {
     color: lightgrey; } }
 
@@ -424,13 +461,17 @@ body > input[type="checkbox"]:checked ~ main {
   z-index: 1; }
 
 .photograf__list--icons {
-  display: flex; }
+  display: flex;
+  gap: 10px;
+  margin-top: 16px; }
 
 .photograf_features__list--icons {
-  margin-block-start: 35px; }
+  margin-block-start: 33px;
+  margin-bottom: 106px; }
 
 .photograf__items--icons {
-  width: calc(var(--fix-width) / 4); }
+  width: 18px;
+  height: 18px; }
 
 .photograf__link--icons {
   display: block;
@@ -458,6 +499,11 @@ body > input[type="checkbox"]:checked ~ main {
 .photograf__link--icons--instagram:focus {
   background-image: url("../icons/circle-instagram.svg"); }
 
+@media (min-width: 1000px) {
+  .photograf_features__list--icons {
+    margin-top: 57px;
+    margin-bottom: 77px; } }
+
 .photograf__navigation--newsletter {
   margin-block-start: 79.91px;
   margin-block-end: calc(78px - 44px); }
@@ -468,7 +514,7 @@ body > input[type="checkbox"]:checked ~ main {
 .photograf__link--newsletter {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8); }
+  line-height: 24px; }
 
 .photograf__items--newsletter:nth-of-type(1) {
   padding-bottom: 1.5rem; }
@@ -512,13 +558,15 @@ body > input[type="checkbox"]:checked ~ main {
   top: 44px; }
 
 .photograf__form,
-.photograf__form--contents {
+.photograf__fildset {
   display: flex;
   flex-direction: column; }
 
-.photograf__form--contents {
+.photograf__fildset {
   border-color: transparent;
-  padding-inline-start: 0; }
+  padding-inline-start: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0; }
 
 .photograf__label--email {
   font-family: 'DM Sans-bold';
@@ -530,24 +578,34 @@ body > input[type="checkbox"]:checked ~ main {
   line-height: var(--based-value);
   color: #000000; }
 
-.photograf__email__input,
+.photograf__input--email,
 .photograf__form--subscribe {
+  font-family: 'DM Sans';
   border-color: transparent;
   box-sizing: border-box;
   border-radius: 5px;
   padding-inline-start: var(--based-value);
-  padding-block-start: 13px;
-  padding-block-end: 11px;
+  height: 48px;
   margin-block-end: var(--based-value); }
 
 .photograf__form--subscribe {
   max-width: 50%;
   background-color: #434CCC;
   color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
   padding-inline-start: 45.5px;
   padding-inline-end: 45.5px;
   margin-block-end: 54px;
   opacity: 0.8; }
+
+::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5); }
 
 .photograf__form--subscribe:hover {
   opacity: 1; }
@@ -559,16 +617,15 @@ body > input[type="checkbox"]:checked ~ main {
     justify-content: space-between;
     align-items: baseline;
     align-items: unset;
-    flex-basis: 40%;
+    flex-basis: 570px;
     margin-block-start: 2.5rem; }
-  .photograf__form--contents {
+  .photograf__fildset {
     padding: 0;
-    margin-inline-end: 54px; }
-  .photograf__email__input {
-    padding-inline-end: 172px; }
+    flex-basis: 346px; }
   .photograf__label--email {
     margin-block-end: 12px; }
   .photograf__form--subscribe {
+    flex-basis: 170px;
     margin-block-start: var(--margin-block);
     margin-top: 1.8rem; } }
 
@@ -659,7 +716,7 @@ body > input[type="checkbox"]:checked ~ main {
 .photograf_footer--desc {
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--based-value);
-  line-height: calc(var(--based-value) + 8); }
+  line-height: 24px; }
 
 @media (min-width: 1000px) {
   .photograf_footer--container {
