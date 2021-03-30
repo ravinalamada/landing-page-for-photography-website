@@ -1,7 +1,7 @@
 
 .photograf__navigation--newsletter {
   margin-block-start: 79.91px;
-  margin-block-end: calc(78px - 44px);
+  margin-block-end: 29.97px;
 }
 
 .photograf__items--newsletter:not(:first-child) {
@@ -21,7 +21,7 @@
   @include link-dm-sans-font;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .photograf__navigation--newsletter {
     text-align: center;
     margin: var(--value);

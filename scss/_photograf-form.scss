@@ -9,6 +9,7 @@
   padding-inline-start: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  padding: 0;
 }
 
 .photograf__label--email {
@@ -19,6 +20,11 @@
   color: $black;
 }
 
+.photograf__input--email {
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
 .photograf__input--email,
 .photograf__form--subscribe {
   font-family: 'DM Sans';
@@ -27,7 +33,6 @@
   border-radius: 5px;
   padding-inline-start: var(--based-value);
   height: 48px;
-  margin-block-end: var(--based-value);
 }
 
 .photograf__form--subscribe {
@@ -55,7 +60,7 @@
   opacity: 1;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .photograf__form {
     @include display-row;
     align-items: unset;
@@ -66,10 +71,6 @@
   .photograf__fildset {
     padding: 0;
     flex-basis: 346px;
-  }
-
-  .photograf__label--email {
-    margin-block-end: 12px;
   }
 
   .photograf__form--subscribe {

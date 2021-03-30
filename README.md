@@ -8,21 +8,19 @@
 ## Overview
 ![screenshot1](./webroot/images/photograph-screenshot.png)
 ![screenshot2](./webroot/images/desk-screenshot-photograph.png)
-### What was your experience?
-I think naming class is worth leaning because it makes your code more understable.
-### What have you learned/improved?
-  I learned more how to position images well and I think there is always a new thing in coding everyday which means thereb is always something that needs to be improved.
-
 ### Built With
 - Sass
 - HTML
+- css
+- js
+- [Figma](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16)
 ### Features
-- I have a default file where I set the global rules
+- I have js file where I coded the slider images 
 - I have Header file where I styled the header of the website
-- I have Navigation file where I styled the navigation element and its children
-- I have footer where I styled the website footer
+- I have Navigation file where I toogle the links in the mobile and show all of them in desktop
 ## How To Use
-  Install node-sass by doing 'npm i node-sass' and run it by doing 'npm run scss:watch'
+  - Clone this project by doing git clone
+  - Install node-sass by doing 'npm i node-sass' 
+  - Run it by doing 'npm run scss:watch'
 ## Contact
--  Website [netlify.com](https://prisca-photograph.netlify.app/)
--  GitHub [@ravinalamada](https://github.com/ravinalamada/front-end-finals)
+-  [Github](https://github.com/ravinalamada)

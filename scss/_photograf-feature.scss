@@ -39,7 +39,7 @@
   text-align: left;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .photograf_features--container {
     @include max-width-container;
     @include display-row;

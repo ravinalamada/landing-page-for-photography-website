@@ -11,6 +11,10 @@
   @include padding-inline;
 }
 
+.photograf--profile--container {
+  padding-bottom: 97.89px;
+}
+
 .photograf_newsletter--contents--wrapper {
   background-color: $yellow;
 }
@@ -50,7 +54,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .photograf_newsletter--container {
     @include max-width-container;
     @include display-row;
@@ -75,6 +79,7 @@
   }
   .photograf--profile--container {
     flex-basis: 370px;
+    padding-bottom: 0;
   }
 
   .photograf_newsletter--header--contents {
