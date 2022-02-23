@@ -18,8 +18,8 @@
 ### Features
 - I have a JS file where I coded the slider images 
 - I have a Header file where I styled the header of the website
-- I have a Navigation file where I toogle the links in the mobile and show all of them in desktop
-- 
+- I have a Navigation file where I toggle the links in the mobile and show all of them in desktop.
+
 ## Getting started
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
